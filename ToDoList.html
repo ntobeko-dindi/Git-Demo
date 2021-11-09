@@ -175,12 +175,21 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+<<<<<<< HEAD
   if (inputValue === '') {
     alert("You must write something!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myUL").appendChild(li);
+=======
+
+  if(inputValue.trim() === ''){
+    alert("to do item cannot be empty");
+  }else{
+    document.getElementById("myUL").appendChild(li);
+  }
+>>>>>>> 8cdc4f3b61d297011a46c21ad80011648f035359
     
   document.getElementById("myInput").value = "";
 
